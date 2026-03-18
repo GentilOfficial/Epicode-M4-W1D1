@@ -230,15 +230,7 @@ function reverseString(string) {
 }
 
 function isPalindrome(string) {
-  reverse = reverseString(string)
-
-  console.log(reverse, string)
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] !== reverse[i]) {
-      return false
-    }
-  }
-  return true
+  return string === reverseString(string)
 }
 
 console.log(isPalindrome("anna"))
